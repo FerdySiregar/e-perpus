@@ -41,7 +41,7 @@ include 'koneksi.php';
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                                 Total Kategori</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?php mysqli_num_rows(mysqli_query($koneksi, 'SELECT * FROM kategori')); ?></div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo mysqli_num_rows(mysqli_query($koneksi, 'SELECT * FROM kategori')); ?></div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
@@ -59,7 +59,7 @@ include 'koneksi.php';
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                                 Total Buku</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?php mysqli_num_rows(mysqli_query($koneksi, 'SELECT * FROM buku')); ?></div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo mysqli_num_rows(mysqli_query($koneksi, 'SELECT * FROM buku')); ?></div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-book fa-2x text-gray-300"></i>
@@ -79,7 +79,7 @@ include 'koneksi.php';
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><?php mysqli_num_rows(mysqli_query($koneksi, 'SELECT * FROM user')); ?></div>
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><?php echo mysqli_num_rows(mysqli_query($koneksi, 'SELECT * FROM user')); ?></div>
                                                 </div>
                                                 <div class="col">
                                                 </div>
@@ -101,7 +101,7 @@ include 'koneksi.php';
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                                 Total Ulasan</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?php mysqli_num_rows(mysqli_query($koneksi, 'SELECT * FROM ulasan')); ?></div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><?php echo mysqli_num_rows(mysqli_query($koneksi, 'SELECT * FROM ulasan')); ?></div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-comments fa-2x text-gray-300"></i>
